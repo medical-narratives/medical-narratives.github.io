@@ -93,9 +93,12 @@
 #modality-carousel {
   height: 500px;
   width: 150%;
+  margin: 0 auto; /* Centers the carousel horizontally */
   position: relative;
-  margin: 0 auto;
   overflow: hidden;
+  display: flex;
+  justify-content: center; /* Ensures content inside is centered */
+  align-items: center;    /* Vertically centers the items */
 }
 
 #modality-carousel .item video {
