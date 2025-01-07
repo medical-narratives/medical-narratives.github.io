@@ -90,22 +90,21 @@
   margin: 0 auto;
 }
 
-.modality-carousel {
-  overflow: hidden;
+#modality-carousel {
+  height: 500px;
   width: 150%;
   position: relative;
-  height: 500px; 
   margin: 0 auto;
+  overflow: hidden;
 }
 
-.modality-carousel .item {
-  position: absolute;
-  width: 150%;
+#modality-carousel .item video {
+  width: 100%;
   height: auto;
-  display: none;
-  justify-content: center;
-  align-items: center;
+  object-fit: contain;
+  background: #000; 
 }
+
 
 .carousel .item {
   position: absolute;
@@ -324,7 +323,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="container is-max-desktop">
     <div class="hero-body">
      <div class="carousel-container">
-  <div id="modality-carousel" class="modality-carousel">
+  <div id="modality-carousel" class="carousel">
     <div class="item active">
       <video autoplay muted loop playsinline>
         <source src="static/videos/ct_fix2.mp4" type="video/mp4" style="width: 100%; height: auto;">
