@@ -91,8 +91,8 @@
 }
 
 #modality-carousel {
-  height: 50vh;
   width: 150%; /* Carousel is 150% of the container width */
+  aspect-ratio: 3 / 1; /* Aspect ratio of 3:2 (width:height) */
   position: relative;
   left: 50%; /* Move the left edge to the center of the container */
   transform: translateX(-50%); /* Shift the element back by half its width */
@@ -100,7 +100,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto; /* Let height adjust dynamically based on width and aspect ratio */
 }
+
+
 
 #modality-carousel .item video {
   width: 100%;
@@ -284,7 +287,26 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="is-size-5 publication-authors">
             <!-- Add authors here -->
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Author Names</span>
+              <span class="author-block">
+                <a href="https://wisdomikezogwo.github.io/">Wisdom O. Ikezogwo</a><sup><span>&#9733;</span></sup>,</span>
+              <span class="author-block">
+                <a>Kevin Zhang</a><sup><span>&#9733;</span></sup>,</span>
+              <span class="author-block">
+                  <a href="https://mehmetsayginseyfioglu.github.io/">Mehmet Saygin Seyfioglu</a></sup>,</span>
+              <span class="author-block">
+                <a href="https://fghezloo.github.io/">Fatemeh Ghezloo</a></sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://ranjaykrishna.com/index.html">Ranjay Krishna</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://homes.cs.washington.edu/~shapiro/">Linda Shapiro</a>
+              </span>
+            </div>
+  
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">University of Washington</span><br>
+              <span class="author-block new-line"><sup><span>&#9733;</span></sup>Equal Contribution</span>
             </div>
             <div class="column has-text-centered">
               <div class="publication-links">
